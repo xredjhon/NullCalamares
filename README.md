@@ -1,80 +1,87 @@
 # NullCalamares
 
-`NullCalamares` is a modular Calamares branding, package selection, and first-boot integration workspace for `NullLinux`.
+NullCalamares is a modular Calamares workspace for NullLinux. It provides branding, curated package catalogs, install profiles, presets, offline bundle manifests, and generated Calamares output for an Arch-based live environment.
 
-This workspace includes:
+This repository is not a full ISO profile on its own. It builds the Calamares tree and related manifests that can be copied into a live ISO root filesystem.
 
-- `project/manifest.json`: project metadata and generated output settings
-- `branding/null/`: logo, backgrounds, and QML slideshow assets
-- `catalog/packages/repo.json`: official repository package catalog
-- `catalog/packages/external.json`: external and first-boot package catalog
-- `catalog/profiles/`: Calamares-selectable installation profiles
-- `catalog/presets/`: first-boot preset combinations
-- `catalog/offline/bundles.json`: offline ISO cache and local repo bundle definitions
-- `catalog/services.json`: service, group, and user-service hints
-- `modules/`: source Calamares module files
-- `scripts/build.py`: generates all output artifacts
-- `scripts/verify_repo_packages.py`: validates repo package names with `pacman -Si`
-- `scripts/check_ascii.py`: enforces ASCII-only text files
-- `dist/rootfs/`: ready-to-copy output tree for the live ISO
-- `docs/`: integration and contract notes
+## Scope
 
-This repository is not a full ISO profile by itself. It produces a ready-to-copy output tree for an Arch-based live ISO:
+- NullLinux branding and slideshow assets
+- Modular package catalogs for repository and external handoff items
+- Calamares-selectable profiles for kernels, desktops, connectivity, privacy, DFIR, observability, virtualization, and workstation tooling
+- Preset manifests for first-boot application setup
+- Online and offline installer metadata
+- First-boot integration contract for NullWelcome
+- Local runtime launcher for isolated NullCalamares testing
 
-- `/etc/calamares/settings.conf`
-- `/etc/calamares/branding/null/`
-- `/etc/calamares/modules/netinstall.conf`
-- `/etc/calamares/modules/netinstall.yaml`
-- `/etc/calamares/modules/packages.conf`
-- `/etc/pacman.conf.d/null-offline-repo.conf`
-- `/usr/share/nullcalamares/manifests/`
-- `/usr/share/nullcalamares/offline/package-list.txt`
+## Repository Layout
 
-## Status
-
-Branding, modular package selection, first-boot handoff, security-focused profiles, and offline bundle manifests are ready.
-
-Deliberately not automated:
-
-- direct Calamares-stage installation of AUR packages
-- attack, exploitation, brute-force, wireless attack, or post-exploitation toolchains
-
-Reason:
-
-- Calamares `netinstall` and `pacman` flows are safer and more reliable with official repository packages
-- AUR and third-party packages need a separate repo, prebuilt package pool, or explicit post-install opt-in flow
+- `branding/null/` NullLinux branding assets, slideshow, and stylesheet
+- `catalog/packages/` repository, external, and user extension catalogs
+- `catalog/profiles/` modular install profiles consumed by `netinstall`
+- `catalog/presets/` grouped first-boot preset definitions
+- `catalog/curated/` generated and hand-maintained category manifests
+- `catalog/offline/` offline bundle definitions
+- `catalog/services.json` service enablement hints
+- `modules/` Calamares module source files
+- `project/manifest.json` project metadata and output targets
+- `scripts/build.py` build pipeline for generated outputs
+- `scripts/verify_repo_packages.py` repository package validation
+- `scripts/check_ascii.py` ASCII-only validation for text files
+- `scripts/run_nullcalamares.sh` isolated launcher for test and installer modes
+- `dist/rootfs/` generated output tree for ISO integration
 
 ## Build
-
-To build all generated outputs:
 
 ```bash
 make build
 ```
 
-To verify official repo package availability:
+## Validation
 
 ```bash
 make verify-packages
-```
-
-To enforce ASCII-only text:
-
-```bash
 make ascii-check
 ```
 
-Generated outputs:
+## Generated Output
 
-- `modules/netinstall.yaml`
-- `dist/rootfs/etc/calamares/`
-- `dist/rootfs/usr/share/nullcalamares/manifests/external-apps.json`
-- `dist/rootfs/usr/share/nullcalamares/manifests/presets.json`
-- `dist/rootfs/usr/share/nullcalamares/manifests/service-hints.json`
-- `dist/rootfs/usr/share/nullcalamares/manifests/offline-bundles.json`
-- `dist/rootfs/usr/share/nullcalamares/manifests/installer-capabilities.json`
+The build pipeline generates:
+
+- `dist/rootfs/etc/calamares/settings.conf`
+- `dist/rootfs/etc/calamares/branding/null/`
+- `dist/rootfs/etc/calamares/modules/netinstall.conf`
+- `dist/rootfs/etc/calamares/modules/netinstall.yaml`
+- `dist/rootfs/etc/calamares/modules/packages.conf`
 - `dist/rootfs/etc/pacman.conf.d/null-offline-repo.conf`
+- `dist/rootfs/usr/share/nullcalamares/manifests/`
 - `dist/rootfs/usr/share/nullcalamares/offline/package-list.txt`
-- `dist/rootfs/etc/skel/.config/autostart/nullwelcome.desktop`
 - `dist/rootfs/usr/local/bin/nullwelcome-firstboot`
 - `dist/rootfs/usr/local/bin/nullcalamares-netmode`
+
+## Runtime Launcher
+
+The local launcher supports isolated runtime testing without replacing the host Calamares setup:
+
+```bash
+./scripts/run_nullcalamares.sh test
+./scripts/run_nullcalamares.sh installer
+./scripts/run_nullcalamares.sh installer-root
+```
+
+- `test` starts a safe UI flow for branding and module checks
+- `installer` starts the installer flow in the current user session
+- `installer-root` re-launches the installer flow with elevated rights for device detection
+
+## Integration Notes
+
+- `dist/rootfs/` is intended to be copied into an Arch-based live root filesystem
+- repository-backed packages are installed through Calamares
+- external items are handed off through generated first-boot manifests
+- user extension catalogs are kept separate so the base project can stay modular
+
+## Related Files
+
+- `docs/integration.md`
+- `docs/nullwelcome-contract.md`
+- `docs/visual-map.md`
