@@ -1,0 +1,17 @@
+{
+  "name": "Development & Build Environments",
+  "description": "Compilers, runtimes, and essential build tooling",
+  "selected": true,
+  "critical": false,
+  "items": [
+    "base-devel",
+    "git",
+    "python3",
+    "go",
+    "rustup",
+    "cc-toolchain",
+    "nodejs",
+    "openjdk",
+    "ruby"
+  ]
+}

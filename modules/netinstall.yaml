@@ -1,0 +1,328 @@
+- name: "Kernel Base"
+  description: "Base system, firmware, initramfs tooling, and CPU microcode"
+  selected: true
+  critical: true
+  packages:
+    - "base"
+    - "linux-firmware"
+    - "mkinitcpio"
+    - "amd-ucode"
+    - "intel-ucode"
+
+- name: "Kernel - Mainline"
+  description: "Default current Linux kernel for general workstation installs"
+  selected: true
+  critical: false
+  packages:
+    - "linux"
+
+- name: "Kernel - LTS"
+  description: "Long-term support kernel profile for stable workstation and lab deployments"
+  selected: false
+  critical: false
+  packages:
+    - "linux-lts"
+
+- name: "Kernel - ZEN"
+  description: "Performance-oriented kernel profile for responsive desktop and lab workloads"
+  selected: false
+  critical: false
+  packages:
+    - "linux-zen"
+
+- name: "Kernel - Hardened"
+  description: "Security-hardened kernel profile for higher-assurance workstation deployments"
+  selected: false
+  critical: false
+  packages:
+    - "linux-hardened"
+
+- name: "Development & Build Environments"
+  description: "Compilers, runtimes, and essential build tooling"
+  selected: true
+  critical: false
+  packages:
+    - "base-devel"
+    - "git"
+    - "python"
+    - "python-pip"
+    - "go"
+    - "rustup"
+    - "gcc"
+    - "clang"
+    - "cmake"
+    - "make"
+    - "nodejs"
+    - "npm"
+    - "jdk-openjdk"
+    - "ruby"
+
+- name: "Desktop - KDE Plasma"
+  description: "KDE Plasma desktop with full applications and SDDM login manager"
+  selected: true
+  critical: false
+  packages:
+    - "networkmanager"
+    - "plasma-meta"
+    - "kde-applications-meta"
+    - "sddm"
+    - "konsole"
+    - "dolphin"
+    - "kate"
+
+- name: "Desktop - GNOME"
+  description: "GNOME desktop session with workstation defaults and GDM login manager"
+  selected: false
+  critical: false
+  packages:
+    - "networkmanager"
+    - "gnome-shell"
+    - "gnome-session"
+    - "gnome-control-center"
+    - "gdm"
+    - "gnome-terminal"
+    - "nautilus"
+    - "eog"
+    - "evince"
+    - "file-roller"
+    - "gvfs"
+
+- name: "Desktop - XFCE"
+  description: "Lightweight XFCE desktop session with LightDM login manager"
+  selected: false
+  critical: false
+  packages:
+    - "networkmanager"
+    - "xfce4-panel"
+    - "xfce4-session"
+    - "xfce4-settings"
+    - "xfce4-appfinder"
+    - "xfdesktop"
+    - "xfwm4"
+    - "thunar"
+    - "xfce4-terminal"
+    - "xfconf"
+    - "tumbler"
+    - "mousepad"
+    - "ristretto"
+    - "parole"
+    - "lightdm"
+    - "lightdm-gtk-greeter"
+
+- name: "Connectivity, Wireless & Bluetooth"
+  description: "Network management, Wi-Fi, mobile broadband, and Bluetooth services"
+  selected: true
+  critical: false
+  packages:
+    - "networkmanager"
+    - "iwd"
+    - "wpa_supplicant"
+    - "modemmanager"
+    - "mobile-broadband-provider-info"
+    - "bluez"
+    - "bluez-utils"
+    - "blueman"
+
+- name: "Security Hardening"
+  description: "Host hardening, firewall, sandboxing, and endpoint defense baseline"
+  selected: true
+  critical: false
+  packages:
+    - "ufw"
+    - "gufw"
+    - "apparmor"
+    - "audit"
+    - "firejail"
+    - "clamav"
+    - "clamtk"
+    - "usbguard"
+    - "fail2ban"
+    - "lynis"
+    - "rsync"
+
+- name: "Printing, Scanning & Discovery"
+  description: "CUPS, driverless discovery, scanner support, and desktop printer tooling"
+  selected: true
+  critical: false
+  packages:
+    - "cups"
+    - "cups-filters"
+    - "cups-pdf"
+    - "system-config-printer"
+    - "gutenprint"
+    - "ghostscript"
+    - "ipp-usb"
+    - "avahi"
+    - "nss-mdns"
+    - "sane"
+    - "simple-scan"
+    - "hplip"
+
+- name: "Virtualization & Containers"
+  description: "Containers, virtualization, and isolated lab tooling"
+  selected: true
+  critical: false
+  packages:
+    - "flatpak"
+    - "docker"
+    - "docker-compose"
+    - "podman"
+    - "podman-compose"
+    - "kubectl"
+    - "minikube"
+    - "virt-manager"
+    - "qemu-desktop"
+    - "dnsmasq"
+    - "iptables"
+    - "qemu-full"
+    - "distrobox"
+    - "tailscale"
+    - "waydroid"
+    - "virtualbox"
+    - "virtualbox-host-modules-arch"
+
+- name: "Communication Extensions"
+  description: "Community and decentralized messaging clients"
+  selected: false
+  critical: false
+  packages:
+    - "discord"
+
+- name: "Privacy & Communication"
+  description: "Privacy-first communication and secure identity tools"
+  selected: false
+  critical: false
+  packages:
+    - "torbrowser-launcher"
+    - "signal-desktop"
+    - "element-desktop"
+    - "gajim"
+    - "thunderbird"
+    - "keepassxc"
+    - "bitwarden"
+    - "syncthing"
+    - "wireguard-tools"
+    - "openvpn"
+    - "proton-vpn-gtk-app"
+    - "protonmail-bridge"
+    - "veracrypt"
+    - "cryptomator"
+    - "kleopatra"
+    - "onionshare"
+
+- name: "Secure Comms & VoIP"
+  description: "Messaging, collaboration, and self-hosted communication services"
+  selected: false
+  critical: false
+  packages:
+    - "mattermost-desktop"
+    - "teams-for-linux"
+    - "baresip"
+    - "matrix-synapse"
+    - "coturn"
+    - "prosody"
+    - "ejabberd"
+
+- name: "Security Workspace"
+  description: "Daily workstation tools for remote access, capture, and admin tasks"
+  selected: true
+  critical: false
+  packages:
+    - "flameshot"
+    - "arch-install-scripts"
+    - "remmina"
+    - "freerdp"
+    - "qbittorrent"
+    - "mpv"
+    - "obs-studio"
+    - "terminator"
+    - "btop"
+    - "putty"
+    - "scrcpy"
+    - "filezilla"
+    - "nextcloud-client"
+    - "7zip"
+    - "bleachbit"
+
+- name: "Wallets & Secure Finance"
+  description: "Privacy-oriented wallet applications from official repositories"
+  selected: false
+  critical: false
+  packages:
+    - "monero-gui"
+    - "electrum"
+
+- name: "DFIR & Defensive Analysis"
+  description: "Forensics, metadata, file recovery, and defensive analysis tools"
+  selected: false
+  critical: false
+  packages:
+    - "volatility3"
+    - "sleuthkit"
+    - "ddrescue"
+    - "perl-image-exiftool"
+    - "osquery"
+    - "binwalk"
+    - "foremost"
+    - "rkhunter"
+    - "yara"
+
+- name: "SIEM, Observability & Data Services"
+  description: "Metrics, logs, search, dashboards, and security data services"
+  selected: false
+  critical: false
+  packages:
+    - "grafana"
+    - "prometheus"
+    - "loki"
+    - "opensearch"
+    - "opensearch-dashboards"
+    - "caddy"
+    - "nginx"
+    - "apache"
+
+- name: "Traffic Inspection"
+  description: "Packet capture, protocol inspection, and traffic analysis"
+  selected: false
+  critical: false
+  packages:
+    - "wireshark-qt"
+    - "wireshark-cli"
+    - "tcpdump"
+    - "scapy"
+    - "mitmproxy"
+
+- name: "User Red Team Extensions"
+  description: "User-supplied red team package set"
+  selected: false
+  critical: false
+  packages:
+    []
+
+- name: "User Wireless Extensions"
+  description: "User-supplied wireless and RF package set"
+  selected: false
+  critical: false
+  packages:
+    []
+
+- name: "User Exploitation Extensions"
+  description: "User-supplied exploitation and post-install package set"
+  selected: false
+  critical: false
+  packages:
+    []
+
+- name: "User C2 Extensions"
+  description: "User-supplied command and control package set"
+  selected: false
+  critical: false
+  packages:
+    []
+
+- name: "Local Approved Extensions"
+  description: "Locally approved extensions backed by the official repository"
+  selected: false
+  critical: false
+  packages:
+    []

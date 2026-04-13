@@ -1,0 +1,11 @@
+{
+  "name": "Connectivity, Wireless & Bluetooth",
+  "description": "Network management, Wi-Fi, mobile broadband, and Bluetooth services",
+  "selected": true,
+  "critical": false,
+  "items": [
+    "networkmanager-stack",
+    "wireless-broadband-stack",
+    "bluetooth-stack"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Connectivity, Wireless & Bluetooth",
+  "entries": [
+    {
+      "label": "NetworkManager",
+      "requestedPackages": ["networkmanager"],
+      "resolver": "networkmanager-stack",
+      "status": "direct_repo",
+      "selectedByDefault": true,
+      "systemServices": ["NetworkManager.service"]
+    },
+    {
+      "label": "Wireless and Broadband",
+      "requestedPackages": ["iwd", "wpa_supplicant", "modemmanager", "mobile-broadband-provider-info"],
+      "resolver": "wireless-broadband-stack",
+      "status": "direct_repo",
+      "selectedByDefault": true,
+      "systemServices": ["ModemManager.service"]
+    },
+    {
+      "label": "Bluetooth",
+      "requestedPackages": ["bluez", "bluez-utils", "blueman"],
+      "resolver": "bluetooth-stack",
+      "status": "direct_repo",
+      "selectedByDefault": true,
+      "systemServices": ["bluetooth.service"]
+    }
+  ]
+}

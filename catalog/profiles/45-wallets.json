@@ -1,0 +1,10 @@
+{
+  "name": "Wallets & Secure Finance",
+  "description": "Privacy-oriented wallet applications from official repositories",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "monero-gui",
+    "electrum"
+  ]
+}

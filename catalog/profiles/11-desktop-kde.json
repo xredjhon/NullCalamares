@@ -1,0 +1,10 @@
+{
+  "name": "Desktop - KDE Plasma",
+  "description": "KDE Plasma desktop with full applications and SDDM login manager",
+  "selected": true,
+  "critical": false,
+  "items": [
+    "networkmanager-stack",
+    "kde-plasma"
+  ]
+}

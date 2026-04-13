@@ -1,0 +1,625 @@
+[
+  {
+    "id": "base-devel",
+    "label": "Base Devel",
+    "source": "repo",
+    "packages": ["base-devel"],
+    "summary": "Arch paket derleme ve temel gelistirme araclari"
+  },
+  {
+    "id": "git",
+    "label": "Git",
+    "source": "repo",
+    "packages": ["git"],
+    "summary": "Dagitik surum kontrol sistemi"
+  },
+  {
+    "id": "python3",
+    "label": "Python 3",
+    "source": "repo",
+    "packages": ["python", "python-pip"],
+    "summary": "Python calisma ortami ve pip"
+  },
+  {
+    "id": "go",
+    "label": "Go",
+    "source": "repo",
+    "packages": ["go"],
+    "summary": "Go derleyici ve arac zinciri"
+  },
+  {
+    "id": "rustup",
+    "label": "Rustup",
+    "source": "repo",
+    "packages": ["rustup"],
+    "summary": "Rust arac zinciri yoneticisi"
+  },
+  {
+    "id": "cc-toolchain",
+    "label": "C C++ Toolchain",
+    "source": "repo",
+    "packages": ["gcc", "clang", "cmake", "make"],
+    "summary": "GCC, Clang ve build araclari"
+  },
+  {
+    "id": "nodejs",
+    "label": "Node.js",
+    "source": "repo",
+    "packages": ["nodejs", "npm"],
+    "summary": "Node.js calisma ortami ve npm"
+  },
+  {
+    "id": "openjdk",
+    "label": "OpenJDK",
+    "source": "repo",
+    "packages": ["jdk-openjdk"],
+    "summary": "Java gelistirme kiti"
+  },
+  {
+    "id": "ruby",
+    "label": "Ruby",
+    "source": "repo",
+    "packages": ["ruby"],
+    "summary": "Ruby dili"
+  },
+  {
+    "id": "kernel-base",
+    "label": "Kernel Base",
+    "source": "repo",
+    "packages": ["base", "linux-firmware", "mkinitcpio", "amd-ucode", "intel-ucode"],
+    "summary": "Base system, firmware, initramfs, and CPU microcode"
+  },
+  {
+    "id": "kernel-mainline",
+    "label": "Kernel Mainline",
+    "source": "repo",
+    "packages": ["linux"],
+    "summary": "Current mainline Linux kernel"
+  },
+  {
+    "id": "kernel-lts",
+    "label": "Kernel LTS",
+    "source": "repo",
+    "packages": ["linux-lts"],
+    "summary": "Long-term support Linux kernel"
+  },
+  {
+    "id": "kernel-zen",
+    "label": "Kernel ZEN",
+    "source": "repo",
+    "packages": ["linux-zen"],
+    "summary": "Performance-tuned Linux kernel"
+  },
+  {
+    "id": "kernel-hardened",
+    "label": "Kernel Hardened",
+    "source": "repo",
+    "packages": ["linux-hardened"],
+    "summary": "Security-hardened Linux kernel"
+  },
+  {
+    "id": "ufw-stack",
+    "label": "UFW Firewall",
+    "source": "repo",
+    "packages": ["ufw", "gufw"],
+    "summary": "CLI and GUI firewall management"
+  },
+  {
+    "id": "apparmor-stack",
+    "label": "AppArmor Stack",
+    "source": "repo",
+    "packages": ["apparmor", "audit", "firejail"],
+    "summary": "MAC, audit, and sandboxing baseline"
+  },
+  {
+    "id": "endpoint-defense",
+    "label": "Endpoint Defense",
+    "source": "repo",
+    "packages": ["clamav", "clamtk", "usbguard", "fail2ban", "lynis"],
+    "summary": "Host hardening and defensive monitoring"
+  },
+  {
+    "id": "flatpak",
+    "label": "Flatpak",
+    "source": "repo",
+    "packages": ["flatpak"],
+    "summary": "Sandbox uygulama dagitimi"
+  },
+  {
+    "id": "docker-stack",
+    "label": "Docker",
+    "source": "repo",
+    "packages": ["docker", "docker-compose"],
+    "summary": "Docker ve compose is akisi"
+  },
+  {
+    "id": "podman-stack",
+    "label": "Podman",
+    "source": "repo",
+    "packages": ["podman", "podman-compose"],
+    "summary": "Daemon gerektirmeyen container motoru"
+  },
+  {
+    "id": "kubernetes-stack",
+    "label": "Kubernetes",
+    "source": "repo",
+    "packages": ["kubectl", "minikube"],
+    "summary": "Kubernetes istemcisi ve yerel cluster"
+  },
+  {
+    "id": "virt-manager-stack",
+    "label": "Virt Manager",
+    "source": "repo",
+    "packages": ["virt-manager", "qemu-desktop", "dnsmasq", "iptables"],
+    "summary": "Libvirt tabanli sanallastirma arayuzu"
+  },
+  {
+    "id": "qemu-full",
+    "label": "QEMU Full",
+    "source": "repo",
+    "packages": ["qemu-full"],
+    "summary": "Full QEMU package set"
+  },
+  {
+    "id": "distrobox",
+    "label": "Distrobox",
+    "source": "repo",
+    "packages": ["distrobox"],
+    "summary": "Farkli Linux ortamlarini kapsulleme"
+  },
+  {
+    "id": "mesh-vpn",
+    "label": "Mesh VPN",
+    "source": "repo",
+    "packages": ["tailscale"],
+    "summary": "Mesh VPN connectivity for distributed labs"
+  },
+  {
+    "id": "networkmanager-stack",
+    "label": "NetworkManager",
+    "source": "repo",
+    "packages": ["networkmanager"],
+    "summary": "Desktop and workstation network management"
+  },
+  {
+    "id": "wireless-broadband-stack",
+    "label": "Wireless and Broadband",
+    "source": "repo",
+    "packages": ["iwd", "wpa_supplicant", "modemmanager", "mobile-broadband-provider-info"],
+    "summary": "Wi-Fi, WPA, and mobile broadband connectivity stack"
+  },
+  {
+    "id": "bluetooth-stack",
+    "label": "Bluetooth Stack",
+    "source": "repo",
+    "packages": ["bluez", "bluez-utils", "blueman"],
+    "summary": "Bluetooth services, utilities, and desktop pairing tools"
+  },
+  {
+    "id": "print-scan-stack",
+    "label": "Print and Scan Stack",
+    "source": "repo",
+    "packages": ["cups", "cups-filters", "cups-pdf", "system-config-printer", "gutenprint", "ghostscript", "ipp-usb", "avahi", "nss-mdns", "sane", "simple-scan", "hplip"],
+    "summary": "Printing, scanning, service discovery, and driver support"
+  },
+  {
+    "id": "kde-plasma",
+    "label": "KDE Plasma",
+    "source": "repo",
+    "packages": ["plasma-meta", "kde-applications-meta", "sddm", "konsole", "dolphin", "kate"],
+    "summary": "Full KDE Plasma desktop with core applications"
+  },
+  {
+    "id": "gnome-desktop",
+    "label": "GNOME",
+    "source": "repo",
+    "packages": ["gnome-shell", "gnome-session", "gnome-control-center", "gdm", "gnome-terminal", "nautilus", "eog", "evince", "file-roller", "gvfs"],
+    "summary": "GNOME desktop session with core workstation applications"
+  },
+  {
+    "id": "xfce-desktop",
+    "label": "XFCE",
+    "source": "repo",
+    "packages": ["xfce4-panel", "xfce4-session", "xfce4-settings", "xfce4-appfinder", "xfdesktop", "xfwm4", "thunar", "xfce4-terminal", "xfconf", "tumbler", "mousepad", "ristretto", "parole", "lightdm", "lightdm-gtk-greeter"],
+    "summary": "Lightweight XFCE desktop with core workstation applications"
+  },
+  {
+    "id": "signal",
+    "label": "Signal",
+    "source": "repo",
+    "packages": ["signal-desktop"],
+    "summary": "Uctan uca sifreli mesajlasma"
+  },
+  {
+    "id": "element",
+    "label": "Element",
+    "source": "repo",
+    "packages": ["element-desktop"],
+    "summary": "Matrix istemcisi"
+  },
+  {
+    "id": "gajim",
+    "label": "Gajim",
+    "source": "repo",
+    "packages": ["gajim"],
+    "summary": "XMPP istemcisi"
+  },
+  {
+    "id": "discord",
+    "label": "Discord",
+    "source": "repo",
+    "packages": ["discord"],
+    "summary": "Community voice and text platform"
+  },
+  {
+    "id": "mattermost",
+    "label": "Mattermost",
+    "source": "repo",
+    "packages": ["mattermost-desktop"],
+    "summary": "Team collaboration desktop client"
+  },
+  {
+    "id": "teams-for-linux",
+    "label": "Teams for Linux",
+    "source": "repo",
+    "packages": ["teams-for-linux"],
+    "summary": "Teams client for Linux workstations"
+  },
+  {
+    "id": "protonmail-bridge",
+    "label": "ProtonMail Bridge",
+    "source": "repo",
+    "packages": ["protonmail-bridge"],
+    "summary": "Bridge for Proton Mail desktop integration"
+  },
+  {
+    "id": "thunderbird",
+    "label": "Thunderbird",
+    "source": "repo",
+    "packages": ["thunderbird"],
+    "summary": "Posta istemcisi"
+  },
+  {
+    "id": "keepassxc",
+    "label": "KeePassXC",
+    "source": "repo",
+    "packages": ["keepassxc"],
+    "summary": "Parola yonetimi"
+  },
+  {
+    "id": "security-sync",
+    "label": "Security Sync",
+    "source": "repo",
+    "packages": ["rsync"],
+    "summary": "Offline bundle and secure sync helper"
+  },
+  {
+    "id": "bitwarden",
+    "label": "Bitwarden",
+    "source": "repo",
+    "packages": ["bitwarden"],
+    "summary": "Parola yoneticisi"
+  },
+  {
+    "id": "syncthing",
+    "label": "Syncthing",
+    "source": "repo",
+    "packages": ["syncthing"],
+    "summary": "Surekli dosya senkronizasyonu"
+  },
+  {
+    "id": "wireguard",
+    "label": "WireGuard",
+    "source": "repo",
+    "packages": ["wireguard-tools"],
+    "summary": "Modern VPN araclari"
+  },
+  {
+    "id": "openvpn",
+    "label": "OpenVPN",
+    "source": "repo",
+    "packages": ["openvpn"],
+    "summary": "VPN istemci ve servis araclari"
+  },
+  {
+    "id": "protonvpn",
+    "label": "ProtonVPN",
+    "source": "repo",
+    "packages": ["proton-vpn-gtk-app"],
+    "summary": "Community GTK client for Proton VPN"
+  },
+  {
+    "id": "veracrypt",
+    "label": "VeraCrypt",
+    "source": "repo",
+    "packages": ["veracrypt"],
+    "summary": "Disk sifreleme araci"
+  },
+  {
+    "id": "cryptomator",
+    "label": "Cryptomator",
+    "source": "repo",
+    "packages": ["cryptomator"],
+    "summary": "Istemci tarafli sifreleme"
+  },
+  {
+    "id": "kleopatra",
+    "label": "Kleopatra",
+    "source": "repo",
+    "packages": ["kleopatra"],
+    "summary": "GnuPG sertifika yonetimi"
+  },
+  {
+    "id": "onionshare",
+    "label": "OnionShare",
+    "source": "repo",
+    "packages": ["onionshare"],
+    "summary": "Tor uzerinden dosya paylasimi"
+  },
+  {
+    "id": "waydroid",
+    "label": "Waydroid",
+    "source": "repo",
+    "packages": ["waydroid"],
+    "summary": "Android container runtime for Linux"
+  },
+  {
+    "id": "voip-client",
+    "label": "Baresip",
+    "source": "repo",
+    "packages": ["baresip"],
+    "summary": "Portable SIP user agent for secure VoIP labs"
+  },
+  {
+    "id": "virtualbox-stack",
+    "label": "VirtualBox",
+    "source": "repo",
+    "packages": ["virtualbox", "virtualbox-host-modules-arch"],
+    "summary": "VirtualBox host virtualization stack"
+  },
+  {
+    "id": "flameshot",
+    "label": "Flameshot",
+    "source": "repo",
+    "packages": ["flameshot"],
+    "summary": "Ekran goruntusu araci"
+  },
+  {
+    "id": "bleachbit",
+    "label": "BleachBit",
+    "source": "repo",
+    "packages": ["bleachbit"],
+    "summary": "Privacy cleanup and disk space recovery"
+  },
+  {
+    "id": "security-browser",
+    "label": "Security Browser Set",
+    "source": "repo",
+    "packages": ["torbrowser-launcher"],
+    "summary": "Privacy-focused browser launcher"
+  },
+  {
+    "id": "monero-gui",
+    "label": "Monero GUI",
+    "source": "repo",
+    "packages": ["monero-gui"],
+    "summary": "Monero wallet GUI"
+  },
+  {
+    "id": "electrum",
+    "label": "Electrum",
+    "source": "repo",
+    "packages": ["electrum"],
+    "summary": "Lightweight Bitcoin wallet"
+  },
+  {
+    "id": "observability-stack",
+    "label": "Observability Stack",
+    "source": "repo",
+    "packages": ["grafana", "prometheus", "loki"],
+    "summary": "Dashboards, metrics, and log aggregation"
+  },
+  {
+    "id": "opensearch-stack",
+    "label": "OpenSearch Stack",
+    "source": "repo",
+    "packages": ["opensearch", "opensearch-dashboards"],
+    "summary": "Search and analytics platform for security data"
+  },
+  {
+    "id": "web-gateway-stack",
+    "label": "Web Gateway Stack",
+    "source": "repo",
+    "packages": ["caddy", "nginx", "apache"],
+    "summary": "Web and reverse proxy services for labs and portals"
+  },
+  {
+    "id": "matrix-homeserver",
+    "label": "Matrix Homeserver",
+    "source": "repo",
+    "packages": ["matrix-synapse", "coturn"],
+    "summary": "Matrix collaboration backend with TURN support"
+  },
+  {
+    "id": "xmpp-servers",
+    "label": "XMPP Servers",
+    "source": "repo",
+    "packages": ["prosody", "ejabberd"],
+    "summary": "XMPP server options for secure comms infrastructure"
+  },
+  {
+    "id": "remmina",
+    "label": "Remmina",
+    "source": "repo",
+    "packages": ["remmina", "freerdp"],
+    "summary": "Uzak masaustu istemcisi"
+  },
+  {
+    "id": "qbittorrent",
+    "label": "qBittorrent",
+    "source": "repo",
+    "packages": ["qbittorrent"],
+    "summary": "BitTorrent istemcisi"
+  },
+  {
+    "id": "mpv",
+    "label": "MPV",
+    "source": "repo",
+    "packages": ["mpv"],
+    "summary": "Medya oynatici"
+  },
+  {
+    "id": "obs-studio",
+    "label": "OBS Studio",
+    "source": "repo",
+    "packages": ["obs-studio"],
+    "summary": "Kayit ve yayin uygulamasi"
+  },
+  {
+    "id": "terminator",
+    "label": "Terminator",
+    "source": "repo",
+    "packages": ["terminator"],
+    "summary": "Coklu terminal arayuzu"
+  },
+  {
+    "id": "btop",
+    "label": "btop",
+    "source": "repo",
+    "packages": ["btop"],
+    "summary": "Kaynak izleme araci"
+  },
+  {
+    "id": "install-tools",
+    "label": "Install Tools",
+    "source": "repo",
+    "packages": ["arch-install-scripts"],
+    "summary": "Arch installation support scripts"
+  },
+  {
+    "id": "putty",
+    "label": "PuTTY",
+    "source": "repo",
+    "packages": ["putty"],
+    "summary": "SSH ve telnet istemcisi"
+  },
+  {
+    "id": "scrcpy",
+    "label": "scrcpy",
+    "source": "repo",
+    "packages": ["scrcpy"],
+    "summary": "Android ekran yansitma"
+  },
+  {
+    "id": "filezilla",
+    "label": "FileZilla",
+    "source": "repo",
+    "packages": ["filezilla"],
+    "summary": "FTP ve SFTP istemcisi"
+  },
+  {
+    "id": "nextcloud-client",
+    "label": "Nextcloud",
+    "source": "repo",
+    "packages": ["nextcloud-client"],
+    "summary": "Nextcloud masaustu istemcisi"
+  },
+  {
+    "id": "7zip",
+    "label": "7-Zip",
+    "source": "repo",
+    "packages": ["7zip"],
+    "summary": "Arsivleme araci"
+  },
+  {
+    "id": "volatility3",
+    "label": "Volatility 3",
+    "source": "repo",
+    "packages": ["volatility3"],
+    "summary": "Bellek adli analizi"
+  },
+  {
+    "id": "sleuthkit",
+    "label": "Sleuth Kit",
+    "source": "repo",
+    "packages": ["sleuthkit"],
+    "summary": "Dosya sistemi adli analiz araclari"
+  },
+  {
+    "id": "ddrescue",
+    "label": "GNU ddrescue",
+    "source": "repo",
+    "packages": ["ddrescue"],
+    "summary": "Veri kurtarma araci"
+  },
+  {
+    "id": "exiftool",
+    "label": "ExifTool",
+    "source": "repo",
+    "packages": ["perl-image-exiftool"],
+    "summary": "Metadata inceleme ve duzenleme"
+  },
+  {
+    "id": "osquery",
+    "label": "osquery",
+    "source": "repo",
+    "packages": ["osquery"],
+    "summary": "SQL tabanli sistem gozlemi"
+  },
+  {
+    "id": "binwalk",
+    "label": "Binwalk",
+    "source": "repo",
+    "packages": ["binwalk"],
+    "summary": "Firmware ve binary inceleme"
+  },
+  {
+    "id": "foremost",
+    "label": "Foremost",
+    "source": "repo",
+    "packages": ["foremost"],
+    "summary": "Dosya kurtarma ve carving"
+  },
+  {
+    "id": "rkhunter",
+    "label": "rkhunter",
+    "source": "repo",
+    "packages": ["rkhunter"],
+    "summary": "Rootkit ve sistem butunlugu taramasi"
+  },
+  {
+    "id": "yara",
+    "label": "YARA",
+    "source": "repo",
+    "packages": ["yara"],
+    "summary": "Desen tabanli malware ve artefakt tarama"
+  },
+  {
+    "id": "wireshark",
+    "label": "Wireshark",
+    "source": "repo",
+    "packages": ["wireshark-qt", "wireshark-cli"],
+    "summary": "Ag trafigi analizi"
+  },
+  {
+    "id": "tcpdump",
+    "label": "tcpdump",
+    "source": "repo",
+    "packages": ["tcpdump"],
+    "summary": "Komut satiri paket yakalama"
+  },
+  {
+    "id": "scapy",
+    "label": "Scapy",
+    "source": "repo",
+    "packages": ["scapy"],
+    "summary": "Python tabanli paket isleme"
+  },
+  {
+    "id": "mitmproxy",
+    "label": "mitmproxy",
+    "source": "repo",
+    "packages": ["mitmproxy"],
+    "summary": "HTTP ve TLS proxy analizi"
+  }
+]

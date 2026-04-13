@@ -1,0 +1,9 @@
+{
+  "name": "Kernel - Mainline",
+  "description": "Default current Linux kernel for general workstation installs",
+  "selected": true,
+  "critical": false,
+  "items": [
+    "kernel-mainline"
+  ]
+}

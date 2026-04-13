@@ -1,0 +1,9 @@
+{
+  "name": "Communication Extensions",
+  "description": "Community and decentralized messaging clients",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "discord"
+  ]
+}

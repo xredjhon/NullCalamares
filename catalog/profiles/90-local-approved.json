@@ -1,0 +1,7 @@
+{
+  "name": "Local Approved Extensions",
+  "description": "Locally approved extensions backed by the official repository",
+  "selected": false,
+  "critical": false,
+  "items": []
+}

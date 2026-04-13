@@ -1,0 +1,26 @@
+{
+  "id": "balanced",
+  "label": "Balanced Security Workstation",
+  "description": "Development, hardening, virtualization, and daily security workspace",
+  "profiles": [
+    "Kernel Base",
+    "Kernel - Mainline",
+    "Desktop - KDE Plasma",
+    "Connectivity, Wireless & Bluetooth",
+    "Printing, Scanning & Discovery",
+    "Security Hardening",
+    "Development & Build Environments",
+    "Virtualization & Containers",
+    "SIEM, Observability & Data Services",
+    "Security Workspace"
+  ],
+  "externalItems": [
+    "quickemu",
+    "ventoy",
+    "vscodium",
+    "librewolf",
+    "rustdesk",
+    "mullvad-browser",
+    "ungoogled-chromium"
+  ]
+}

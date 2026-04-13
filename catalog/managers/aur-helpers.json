@@ -1,0 +1,16 @@
+[
+  {
+    "id": "paru",
+    "label": "Paru",
+    "source": "repo",
+    "packages": ["paru"],
+    "recommended": true
+  },
+  {
+    "id": "yay",
+    "label": "Yay",
+    "source": "repo",
+    "packages": ["yay"],
+    "recommended": false
+  }
+]

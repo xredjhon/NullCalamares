@@ -1,0 +1,7 @@
+{
+  "name": "User Red Team Extensions",
+  "description": "User-supplied red team package set",
+  "selected": false,
+  "critical": false,
+  "items": []
+}

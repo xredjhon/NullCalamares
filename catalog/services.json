@@ -1,0 +1,107 @@
+[
+  {
+    "itemId": "networkmanager-stack",
+    "systemServices": ["NetworkManager.service"],
+    "groups": []
+  },
+  {
+    "itemId": "wireless-broadband-stack",
+    "systemServices": ["ModemManager.service"],
+    "groups": []
+  },
+  {
+    "itemId": "bluetooth-stack",
+    "systemServices": ["bluetooth.service"],
+    "groups": []
+  },
+  {
+    "itemId": "print-scan-stack",
+    "systemServices": ["cups.service", "avahi-daemon.service", "ipp-usb.service"],
+    "groups": ["lp", "scanner"]
+  },
+  {
+    "itemId": "kde-plasma",
+    "systemServices": ["sddm.service"],
+    "groups": []
+  },
+  {
+    "itemId": "gnome-desktop",
+    "systemServices": ["gdm.service"],
+    "groups": []
+  },
+  {
+    "itemId": "xfce-desktop",
+    "systemServices": ["lightdm.service"],
+    "groups": []
+  },
+  {
+    "itemId": "ufw-stack",
+    "systemServices": ["ufw.service"],
+    "groups": []
+  },
+  {
+    "itemId": "apparmor-stack",
+    "systemServices": ["apparmor.service"],
+    "groups": []
+  },
+  {
+    "itemId": "endpoint-defense",
+    "systemServices": ["fail2ban.service", "usbguard.service", "clamav-freshclam.service"],
+    "groups": []
+  },
+  {
+    "itemId": "docker-stack",
+    "systemServices": ["docker.service"],
+    "groups": ["docker"]
+  },
+  {
+    "itemId": "mesh-vpn",
+    "systemServices": ["tailscaled.service"],
+    "groups": []
+  },
+  {
+    "itemId": "virt-manager-stack",
+    "systemServices": ["libvirtd.service"],
+    "groups": ["libvirt"]
+  },
+  {
+    "itemId": "matrix-homeserver",
+    "systemServices": ["matrix-synapse.service", "coturn.service"],
+    "groups": []
+  },
+  {
+    "itemId": "xmpp-servers",
+    "systemServices": ["prosody.service", "ejabberd.service"],
+    "groups": []
+  },
+  {
+    "itemId": "observability-stack",
+    "systemServices": ["grafana.service", "prometheus.service", "loki.service"],
+    "groups": []
+  },
+  {
+    "itemId": "opensearch-stack",
+    "systemServices": ["opensearch.service", "opensearch-dashboards.service"],
+    "groups": []
+  },
+  {
+    "itemId": "web-gateway-stack",
+    "systemServices": ["caddy.service", "nginx.service", "httpd.service"],
+    "groups": []
+  },
+  {
+    "itemId": "syncthing",
+    "userServices": ["syncthing.service"],
+    "groups": []
+  },
+  {
+    "itemId": "wireguard",
+    "systemServices": [],
+    "groups": ["network"]
+  },
+  {
+    "itemId": "wireshark",
+    "systemServices": [],
+    "groups": ["wireshark"]
+  }
+]

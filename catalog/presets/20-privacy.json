@@ -1,0 +1,29 @@
+{
+  "id": "privacy",
+  "label": "Privacy Workstation",
+  "description": "Privacy, communication, and secure sync focused workstation",
+  "profiles": [
+    "Kernel Base",
+    "Kernel - Hardened",
+    "Desktop - GNOME",
+    "Connectivity, Wireless & Bluetooth",
+    "Printing, Scanning & Discovery",
+    "Privacy & Communication",
+    "Communication Extensions",
+    "Secure Comms & VoIP",
+    "Security Workspace",
+    "Wallets & Secure Finance"
+  ],
+  "externalItems": [
+    "qtox",
+    "session",
+    "simplex",
+    "logseq",
+    "mullvad-browser",
+    "librewolf",
+    "trezor-suite",
+    "bisq",
+    "freetube",
+    "megasync"
+  ]
+}

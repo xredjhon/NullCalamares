@@ -1,0 +1,12 @@
+{
+  "name": "Security Hardening",
+  "description": "Host hardening, firewall, sandboxing, and endpoint defense baseline",
+  "selected": true,
+  "critical": false,
+  "items": [
+    "ufw-stack",
+    "apparmor-stack",
+    "endpoint-defense",
+    "security-sync"
+  ]
+}

@@ -1,0 +1,31 @@
+---
+componentName:  "null"
+welcomeStyleCalamares: true
+welcomeExpandingLogo: false
+
+strings:
+  productName:         "NullLinux"
+  shortProductName:    "NullLinux"
+  version:             "1.0"
+  shortVersion:        "1.0"
+  versionedName:       "NullLinux 1.0"
+  shortVersionedName:  "NullLinux 1.0"
+  bootloaderEntryName: "NullLinux"
+  productUrl:          "https://nullinux.local"
+  supportUrl:          "https://nullinux.local/support"
+  knownIssuesUrl:      "https://nullinux.local/issues"
+  releaseNotesUrl:     "https://nullinux.local/releases"
+
+images:
+  productLogo: "assets/logo.png"
+  productIcon: "assets/logo.png"
+  productWelcome: "assets/welcome.png"
+
+style:
+  SidebarBackground:        "#050607"
+  SidebarText:              "#FFFFFF"
+  SidebarTextCurrent:       "#FFFFFF"
+  SidebarBackgroundCurrent: "#113222"
+
+slideshow: "show.qml"
+slideshowAPI: 2

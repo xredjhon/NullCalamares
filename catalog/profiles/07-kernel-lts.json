@@ -1,0 +1,9 @@
+{
+  "name": "Kernel - LTS",
+  "description": "Long-term support kernel profile for stable workstation and lab deployments",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "kernel-lts"
+  ]
+}

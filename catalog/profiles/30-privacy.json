@@ -1,0 +1,24 @@
+{
+  "name": "Privacy & Communication",
+  "description": "Privacy-first communication and secure identity tools",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "security-browser",
+    "signal",
+    "element",
+    "gajim",
+    "thunderbird",
+    "keepassxc",
+    "bitwarden",
+    "syncthing",
+    "wireguard",
+    "openvpn",
+    "protonvpn",
+    "protonmail-bridge",
+    "veracrypt",
+    "cryptomator",
+    "kleopatra",
+    "onionshare"
+  ]
+}

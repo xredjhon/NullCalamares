@@ -1,0 +1,25 @@
+{
+  "id": "performance-lab",
+  "label": "Performance Lab Workstation",
+  "description": "ZEN kernel, KDE Plasma, development tooling, and virtualization for responsive lab systems",
+  "profiles": [
+    "Kernel Base",
+    "Kernel - ZEN",
+    "Desktop - KDE Plasma",
+    "Connectivity, Wireless & Bluetooth",
+    "Printing, Scanning & Discovery",
+    "Development & Build Environments",
+    "Virtualization & Containers",
+    "Security Workspace",
+    "Traffic Inspection"
+  ],
+  "externalItems": [
+    "quickemu",
+    "quickgui",
+    "ventoy",
+    "vscodium",
+    "librewolf",
+    "rustdesk",
+    "ungoogled-chromium"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "SIEM, Observability & Data Services",
+  "description": "Metrics, logs, search, dashboards, and security data services",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "observability-stack",
+    "opensearch-stack",
+    "web-gateway-stack"
+  ]
+}

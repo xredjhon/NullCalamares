@@ -1,0 +1,38 @@
+{
+  "category": "Desktop Environments",
+  "sharedEntries": [
+    {
+      "label": "NetworkManager",
+      "requestedPackages": ["networkmanager"],
+      "resolver": "networkmanager-stack",
+      "status": "direct_repo",
+      "selectedByDefault": true
+    }
+  ],
+  "entries": [
+    {
+      "label": "KDE Plasma",
+      "requestedPackages": ["plasma-meta", "kde-applications-meta", "sddm", "konsole", "dolphin", "kate"],
+      "resolver": "kde-plasma",
+      "status": "direct_repo",
+      "selectedByDefault": true,
+      "displayManager": "sddm.service"
+    },
+    {
+      "label": "GNOME",
+      "requestedPackages": ["gnome-shell", "gnome-session", "gnome-control-center", "gdm", "gnome-terminal", "nautilus", "eog", "evince", "file-roller", "gvfs"],
+      "resolver": "gnome-desktop",
+      "status": "direct_repo",
+      "selectedByDefault": false,
+      "displayManager": "gdm.service"
+    },
+    {
+      "label": "XFCE",
+      "requestedPackages": ["xfce4-panel", "xfce4-session", "xfce4-settings", "xfce4-appfinder", "xfdesktop", "xfwm4", "thunar", "xfce4-terminal", "xfconf", "tumbler", "mousepad", "ristretto", "parole", "lightdm", "lightdm-gtk-greeter"],
+      "resolver": "xfce-desktop",
+      "status": "direct_repo",
+      "selectedByDefault": false,
+      "displayManager": "lightdm.service"
+    }
+  ]
+}

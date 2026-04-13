@@ -1,0 +1,10 @@
+{
+  "name": "Desktop - XFCE",
+  "description": "Lightweight XFCE desktop session with LightDM login manager",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "networkmanager-stack",
+    "xfce-desktop"
+  ]
+}

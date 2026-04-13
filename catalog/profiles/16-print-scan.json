@@ -1,0 +1,9 @@
+{
+  "name": "Printing, Scanning & Discovery",
+  "description": "CUPS, driverless discovery, scanner support, and desktop printer tooling",
+  "selected": true,
+  "critical": false,
+  "items": [
+    "print-scan-stack"
+  ]
+}

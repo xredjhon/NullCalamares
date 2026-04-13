@@ -1,0 +1,10 @@
+{
+  "name": "Desktop - GNOME",
+  "description": "GNOME desktop session with workstation defaults and GDM login manager",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "networkmanager-stack",
+    "gnome-desktop"
+  ]
+}

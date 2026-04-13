@@ -1,0 +1,59 @@
+{
+  "category": "Development & Build Environments",
+  "entries": [
+    {
+      "label": "Base Devel",
+      "requestedPackages": ["base-devel"],
+      "resolver": "base-devel",
+      "status": "direct_repo"
+    },
+    {
+      "label": "Git",
+      "requestedPackages": ["git"],
+      "resolver": "git",
+      "status": "direct_repo"
+    },
+    {
+      "label": "Python 3",
+      "requestedPackages": ["python", "python-pip"],
+      "resolver": "python3",
+      "status": "direct_repo"
+    },
+    {
+      "label": "Go (Golang)",
+      "requestedPackages": ["go"],
+      "resolver": "go",
+      "status": "direct_repo"
+    },
+    {
+      "label": "Rust (Rustup)",
+      "requestedPackages": ["rustup"],
+      "resolver": "rustup",
+      "status": "direct_repo"
+    },
+    {
+      "label": "C / C++ (GCC & Clang)",
+      "requestedPackages": ["gcc", "clang", "cmake", "make"],
+      "resolver": "cc-toolchain",
+      "status": "direct_repo"
+    },
+    {
+      "label": "Node.js",
+      "requestedPackages": ["nodejs", "npm"],
+      "resolver": "nodejs",
+      "status": "direct_repo"
+    },
+    {
+      "label": "Java (OpenJDK)",
+      "requestedPackages": ["jdk-openjdk"],
+      "resolver": "openjdk",
+      "status": "direct_repo"
+    },
+    {
+      "label": "Ruby",
+      "requestedPackages": ["ruby"],
+      "resolver": "ruby",
+      "status": "direct_repo"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Kernel - Hardened",
+  "description": "Security-hardened kernel profile for higher-assurance workstation deployments",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "kernel-hardened"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Kernel Base",
+  "description": "Base system, firmware, initramfs tooling, and CPU microcode",
+  "selected": true,
+  "critical": true,
+  "items": [
+    "kernel-base"
+  ]
+}

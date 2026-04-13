@@ -1,0 +1,14 @@
+{
+  "category": "Printing, Scanning & Discovery",
+  "entries": [
+    {
+      "label": "Print and Scan Stack",
+      "requestedPackages": ["cups", "cups-filters", "cups-pdf", "system-config-printer", "gutenprint", "ghostscript", "ipp-usb", "avahi", "nss-mdns", "sane", "simple-scan", "hplip"],
+      "resolver": "print-scan-stack",
+      "status": "direct_repo",
+      "selectedByDefault": true,
+      "systemServices": ["cups.service", "avahi-daemon.service", "ipp-usb.service"],
+      "groups": ["lp", "scanner"]
+    }
+  ]
+}

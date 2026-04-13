@@ -1,0 +1,42 @@
+[
+  {
+    "id": "core-offline",
+    "label": "Core Offline Bundle",
+    "description": "Default offline cache for core security workstation installation",
+    "profiles": [
+      "Kernel Base",
+      "Kernel - Mainline",
+      "Kernel - LTS",
+      "Kernel - ZEN",
+      "Kernel - Hardened",
+      "Desktop - KDE Plasma",
+      "Desktop - GNOME",
+      "Desktop - XFCE",
+      "Connectivity, Wireless & Bluetooth",
+      "Printing, Scanning & Discovery",
+      "Security Hardening",
+      "Development & Build Environments",
+      "Virtualization & Containers",
+      "Privacy & Communication",
+      "Secure Comms & VoIP",
+      "Security Workspace",
+      "DFIR & Defensive Analysis",
+      "Traffic Inspection",
+      "SIEM, Observability & Data Services"
+    ],
+    "externalItems": [
+      "quickemu",
+      "ventoy",
+      "librewolf",
+      "vscodium",
+      "rustdesk",
+      "session",
+      "simplex",
+      "logseq",
+      "mullvad-browser",
+      "ungoogled-chromium",
+      "freetube",
+      "megasync"
+    ]
+  }
+]

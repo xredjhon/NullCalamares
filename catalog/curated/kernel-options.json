@@ -1,0 +1,41 @@
+{
+  "category": "Kernel Options",
+  "baseline": {
+    "label": "Kernel Base",
+    "requestedPackages": ["base", "linux-firmware", "mkinitcpio", "amd-ucode", "intel-ucode"],
+    "resolver": "kernel-base",
+    "status": "direct_repo",
+    "selectedByDefault": true,
+    "critical": true
+  },
+  "entries": [
+    {
+      "label": "Mainline",
+      "requestedPackages": ["linux"],
+      "resolver": "kernel-mainline",
+      "status": "direct_repo",
+      "selectedByDefault": true
+    },
+    {
+      "label": "LTS",
+      "requestedPackages": ["linux-lts"],
+      "resolver": "kernel-lts",
+      "status": "direct_repo",
+      "selectedByDefault": false
+    },
+    {
+      "label": "ZEN",
+      "requestedPackages": ["linux-zen"],
+      "resolver": "kernel-zen",
+      "status": "direct_repo",
+      "selectedByDefault": false
+    },
+    {
+      "label": "Hardened",
+      "requestedPackages": ["linux-hardened"],
+      "resolver": "kernel-hardened",
+      "status": "direct_repo",
+      "selectedByDefault": false
+    }
+  ]
+}

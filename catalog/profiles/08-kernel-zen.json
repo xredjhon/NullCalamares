@@ -1,0 +1,9 @@
+{
+  "name": "Kernel - ZEN",
+  "description": "Performance-oriented kernel profile for responsive desktop and lab workloads",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "kernel-zen"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "DFIR & Defensive Analysis",
+  "description": "Forensics, metadata, file recovery, and defensive analysis tools",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "volatility3",
+    "sleuthkit",
+    "ddrescue",
+    "exiftool",
+    "osquery",
+    "binwalk",
+    "foremost",
+    "rkhunter",
+    "yara"
+  ]
+}

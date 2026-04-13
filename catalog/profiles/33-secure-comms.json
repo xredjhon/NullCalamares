@@ -1,0 +1,13 @@
+{
+  "name": "Secure Comms & VoIP",
+  "description": "Messaging, collaboration, and self-hosted communication services",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "mattermost",
+    "teams-for-linux",
+    "voip-client",
+    "matrix-homeserver",
+    "xmpp-servers"
+  ]
+}

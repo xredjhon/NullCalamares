@@ -1,0 +1,22 @@
+{
+  "id": "analyst",
+  "label": "Analyst Workstation",
+  "description": "Defensive analyst workstation with DFIR and traffic inspection",
+  "profiles": [
+    "Kernel Base",
+    "Kernel - LTS",
+    "Desktop - XFCE",
+    "Connectivity, Wireless & Bluetooth",
+    "Printing, Scanning & Discovery",
+    "Security Hardening",
+    "DFIR & Defensive Analysis",
+    "Traffic Inspection",
+    "SIEM, Observability & Data Services",
+    "Security Workspace"
+  ],
+  "externalItems": [
+    "autopsy",
+    "steghide",
+    "chkrootkit"
+  ]
+}

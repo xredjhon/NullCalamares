@@ -1,0 +1,20 @@
+{
+  "id": "nullcalamares",
+  "branding": "null",
+  "productName": "NullLinux",
+  "version": "1.0",
+  "distRoot": "dist/rootfs",
+  "installerModes": {
+    "online": true,
+    "offline": true,
+    "offlineRepoPath": "/opt/nullcalamares/offline/repo",
+    "offlineDbPath": "/opt/nullcalamares/offline/repo/null-offline.db.tar.zst",
+    "offlineCachePath": "/opt/nullcalamares/offline/cache"
+  },
+  "nullWelcome": {
+    "command": "nullwelcome",
+    "manifestPath": "/usr/share/nullcalamares/manifests/external-apps.json",
+    "presetPath": "/usr/share/nullcalamares/manifests/presets.json",
+    "servicePath": "/usr/share/nullcalamares/manifests/service-hints.json"
+  }
+}

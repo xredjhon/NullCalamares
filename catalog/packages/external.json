@@ -1,0 +1,210 @@
+[
+  {
+    "id": "quickemu",
+    "label": "Quickemu",
+    "source": "manual",
+    "packages": ["quickemu"],
+    "summary": "Hizli VM olusturma araci",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "quickgui",
+    "label": "Quickgui",
+    "source": "aur",
+    "packages": ["quickgui-bin"],
+    "summary": "Quickemu icin grafik arayuz",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "vmware-workstation",
+    "label": "VMware Workstation",
+    "source": "manual",
+    "packages": ["vmware-workstation"],
+    "summary": "VMware workstation hypervisor package handoff",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "ventoy",
+    "label": "Ventoy",
+    "source": "aur",
+    "packages": ["ventoy-bin"],
+    "summary": "Boot USB hazirlama araci",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "qtox",
+    "label": "qTox",
+    "source": "manual",
+    "packages": ["qtox"],
+    "summary": "Decentralized Tox desktop client handoff",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "autopsy",
+    "label": "Autopsy",
+    "source": "manual",
+    "packages": ["autopsy"],
+    "summary": "Adli analiz arayuzu",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "steghide",
+    "label": "Steghide",
+    "source": "manual",
+    "packages": ["steghide"],
+    "summary": "Steganografi araci",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "chkrootkit",
+    "label": "chkrootkit",
+    "source": "manual",
+    "packages": ["chkrootkit"],
+    "summary": "Rootkit tarama araci",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "mullvad-browser",
+    "label": "Mullvad Browser",
+    "source": "manual",
+    "packages": ["mullvad-browser-bin"],
+    "summary": "Privacy browser maintained with the Tor Project",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "waydroid-gapps",
+    "label": "Waydroid GApps Image",
+    "source": "aur",
+    "packages": ["waydroid-image-gapps"],
+    "summary": "Waydroid GApps imaji",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "ayugram",
+    "label": "AyuGram",
+    "source": "aur",
+    "packages": ["ayugram-desktop-bin"],
+    "summary": "Telegram tabanli istemci",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "session",
+    "label": "Session",
+    "source": "aur",
+    "packages": ["session-desktop-bin"],
+    "summary": "Gizlilik odakli mesajlasma istemcisi",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "zapzap",
+    "label": "ZapZap",
+    "source": "aur",
+    "packages": ["zapzap"],
+    "summary": "WhatsApp masaustu istemcisi",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "rustdesk",
+    "label": "RustDesk",
+    "source": "aur",
+    "packages": ["rustdesk-bin"],
+    "summary": "Uzak masaustu araci",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "briar",
+    "label": "Briar Desktop",
+    "source": "aur",
+    "packages": ["briar-desktop"],
+    "summary": "Dayanikli mesajlasma istemcisi",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "logseq",
+    "label": "Logseq",
+    "source": "aur",
+    "packages": ["logseq-desktop-bin"],
+    "summary": "Bilgi tabani uygulamasi",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "freetube",
+    "label": "FreeTube",
+    "source": "manual",
+    "packages": ["freetube"],
+    "summary": "Privacy-focused desktop video client",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "exifcleaner",
+    "label": "ExifCleaner",
+    "source": "aur",
+    "packages": ["exifcleaner-bin"],
+    "summary": "EXIF temizleme araci",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "simplex",
+    "label": "SimpleX Chat",
+    "source": "aur",
+    "packages": ["simplex-chat-bin"],
+    "summary": "Kimliksiz mesajlasma istemcisi",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "megasync",
+    "label": "MEGAsync",
+    "source": "aur",
+    "packages": ["megasync-bin"],
+    "summary": "MEGA senkronizasyon istemcisi",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "bisq",
+    "label": "Bisq",
+    "source": "manual",
+    "packages": ["bisq"],
+    "summary": "Decentralized bitcoin exchange client",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "agoradesk",
+    "label": "AgoraDesk",
+    "source": "manual",
+    "packages": ["agoradesk-bin"],
+    "summary": "P2P trading client handoff",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "ungoogled-chromium",
+    "label": "Ungoogled Chromium",
+    "source": "manual",
+    "packages": ["ungoogled-chromium"],
+    "summary": "Chromium build without Google integration",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "trezor-suite",
+    "label": "Trezor Suite",
+    "source": "aur",
+    "packages": ["trezor-suite-bin"],
+    "summary": "Donanim cuzdan arayuzu",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "librewolf",
+    "label": "LibreWolf",
+    "source": "aur",
+    "packages": ["librewolf-bin"],
+    "summary": "Gizlilik odakli tarayici",
+    "handoff": "nullwelcome"
+  },
+  {
+    "id": "vscodium",
+    "label": "VSCodium",
+    "source": "aur",
+    "packages": ["vscodium-bin"],
+    "summary": "Acik kaynak editor paketi",
+    "handoff": "nullwelcome"
+  }
+]

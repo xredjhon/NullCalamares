@@ -1,0 +1,12 @@
+{
+  "name": "Traffic Inspection",
+  "description": "Packet capture, protocol inspection, and traffic analysis",
+  "selected": false,
+  "critical": false,
+  "items": [
+    "wireshark",
+    "tcpdump",
+    "scapy",
+    "mitmproxy"
+  ]
+}

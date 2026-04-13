@@ -1,0 +1,22 @@
+{
+  "name": "Security Workspace",
+  "description": "Daily workstation tools for remote access, capture, and admin tasks",
+  "selected": true,
+  "critical": false,
+  "items": [
+    "flameshot",
+    "install-tools",
+    "remmina",
+    "qbittorrent",
+    "mpv",
+    "obs-studio",
+    "terminator",
+    "btop",
+    "putty",
+    "scrcpy",
+    "filezilla",
+    "nextcloud-client",
+    "7zip",
+    "bleachbit"
+  ]
+}
